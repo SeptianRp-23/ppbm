@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="83ab5bdf-2ce1-4626-bae6-b9d222cf4a14">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from karyawan]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_gabung" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="golongan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gaji_kotor" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gaji_bersih" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="98" splitType="Stretch">
+			<line>
+				<reportElement uuid="f35f0af8-5bf5-4751-9df3-5c860f08beb1" x="293" y="43" width="386" height="3"/>
+			</line>
+			<staticText>
+				<reportElement uuid="09f82976-952c-4593-8df9-d6b8283e930e" x="279" y="54" width="421" height="35"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Falatehan I No.20, RT.2/RW.1, Melawai, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="83f50458-4410-47e5-baa2-fc6f4eb9ad1c" x="293" y="10" width="386" height="33"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PT. Perdana Prima Bhakti Mandiri]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="fb2d964a-34dd-4aad-83f0-307cf16ad261" x="10" y="10" width="195" height="79"/>
+				<imageExpression><![CDATA["E:\\GIT-PROJECT\\Netbeans\\Penerimaan_Karyawan\\src\\penerimaan_karyawan\\Img\\logo.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement uuid="1c2c81ea-47bd-44ae-ad33-307486faff11" x="1" y="86" width="801" height="3"/>
+			</line>
+			<line>
+				<reportElement uuid="1c2c81ea-47bd-44ae-ad33-307486faff11" x="1" y="89" width="801" height="3"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c3f3e202-d2d3-48e3-9ff7-da14ffeb6ff2" x="342" y="12" width="114" height="25"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gaji Karyawan]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="02f9d183-dda4-4012-9942-b9f024d78bf7" x="1" y="39" width="801" height="1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="e4ac5d73-c491-4450-b7d0-d9fbdcb42573" x="1" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1b6cb550-8355-44b7-b717-a051fd45f980" x="120" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81972eb5-42eb-4e3c-8d38-51ac685e64a1" x="253" y="10" width="104" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Client]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f41ed589-c097-4710-a556-0aa8ed69b5f8" x="398" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal  Join]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81f6f5e7-8e5d-4e16-a1a7-b697b86c2028" x="513" y="10" width="73" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Golongan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6877b210-490e-4fd2-b0da-593d10ff5275" x="596" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Upah /Bulan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a5859e83-9576-4e12-9714-59e7b99ed1c9" x="702" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Upah Bersih]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="58a76570-1e5b-47e8-bb80-8428d92b5c0b" x="1" y="36" width="801" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<textField>
+				<reportElement uuid="22d5a874-9cac-4621-b131-74b5c23038ac" x="0" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a79164d9-5c7e-4505-bf86-52ef320823a3" x="105" y="10" width="131" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c28d0ddf-e380-4c80-8a0b-cae61929a025" x="246" y="10" width="128" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama_pt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ef191400-f8df-48c0-800f-f2a79e1c82aa" x="384" y="10" width="119" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tgl_gabung}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c9dad32b-f922-4b2b-b056-071605dadbc2" x="513" y="10" width="73" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{golongan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a259a364-9d0c-42a8-aafc-25118bea2a98" x="596" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{gaji_kotor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="449ffb63-cab2-4ede-af65-c3da1a21b498" x="702" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{gaji_bersih}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="90" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="e9308848-fa77-4bdc-9bf1-f9a0e03494ef" x="643" y="10" width="138" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="61c957df-9c37-4f9a-91a7-a61b494cedc7" x="612" y="70" width="141" height="20"/>
+				<textElement/>
+				<text><![CDATA[( .. . . . . . . . . . .  . . . .  . . . . .)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="071d5386-cac7-4726-852b-4f3db6da1ee4" x="596" y="10" width="44" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement uuid="f98a8385-1439-4f95-ab4c-dc5971bb137a" x="356" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

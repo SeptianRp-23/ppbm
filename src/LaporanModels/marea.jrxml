@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4d314eab-99ce-441a-9776-0ad0286d0c11">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from area]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="perusahaan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wilayah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kota" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="09f82976-952c-4593-8df9-d6b8283e930e" x="267" y="54" width="421" height="35"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Falatehan I No.20, RT.2/RW.1, Melawai, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="66be35cd-4a0f-4f66-b43f-be0b56dd4014" x="10" y="10" width="199" height="79"/>
+				<imageExpression><![CDATA["E:\\GIT-PROJECT\\Netbeans\\Penerimaan_Karyawan\\src\\penerimaan_karyawan\\Img\\logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="83f50458-4410-47e5-baa2-fc6f4eb9ad1c" x="281" y="10" width="386" height="33"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PT. Perdana Prima Bhakti Mandiri]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="f35f0af8-5bf5-4751-9df3-5c860f08beb1" x="281" y="43" width="386" height="3"/>
+			</line>
+			<line>
+				<reportElement uuid="1c2c81ea-47bd-44ae-ad33-307486faff11" x="0" y="90" width="802" height="3"/>
+			</line>
+			<line>
+				<reportElement uuid="1c2c81ea-47bd-44ae-ad33-307486faff11" x="0" y="94" width="802" height="3"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement uuid="1c2c81ea-47bd-44ae-ad33-307486faff11" x="0" y="32" width="802" height="3"/>
+			</line>
+			<staticText>
+				<reportElement uuid="0fee06a2-32d9-4c55-8e87-8df398efff36" x="347" y="4" width="103" height="26"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Area]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="7a78774d-322b-4c9c-b8de-4bc48477974c" x="0" y="8" width="46" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4c5631cf-2436-4d11-b69d-8f1ceee3ff67" x="85" y="8" width="71" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Client]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b1563474-0dce-4e15-940f-eb8707b40b03" x="332" y="8" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Provinsi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ffbca904-da8a-45d2-93aa-91e6cc179964" x="490" y="11" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kota]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="21ee6ebe-8d96-4d13-ae8e-4310669eb930" x="197" y="8" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="58b641e5-8d8c-4ff6-9c7a-25b5bf565df4" x="659" y="8" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[alamat]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="d77307f0-4252-4221-9370-1fa28a91d2dd" x="0" y="31" width="802" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement uuid="261c2d26-135e-4e0d-a8b3-dac0e9d59b6b" x="0" y="10" width="46" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d2fda3d4-6f9e-45f3-b1d1-b9f4967a09c2" x="51" y="10" width="136" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{perusahaan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1d00e460-4c4b-4a21-aefb-3ab6a8c47d1c" x="307" y="10" width="153" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{wilayah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="002afa08-6b96-4453-8e81-ba8c705476c9" x="469" y="10" width="145" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kota}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a1062399-ade2-4961-87e4-9e1a121b1aab" x="197" y="10" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ba20cadc-2ed5-41a4-86a0-9117669fa26e" x="624" y="10" width="174" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="119" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="071d5386-cac7-4726-852b-4f3db6da1ee4" x="595" y="27" width="44" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="e9308848-fa77-4bdc-9bf1-f9a0e03494ef" x="642" y="27" width="138" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="61c957df-9c37-4f9a-91a7-a61b494cedc7" x="618" y="99" width="141" height="20"/>
+				<textElement/>
+				<text><![CDATA[( .. . . . . . . . . . .  . . . .  . . . . .)]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement uuid="27fc3ebf-6550-44a1-a76a-5f4f5ea207ee" x="347" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
